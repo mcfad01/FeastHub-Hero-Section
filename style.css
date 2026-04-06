@@ -9,12 +9,12 @@
     min-height: 90vh;
     background-position: center;
     background-size: cover;
-    padding: 10px 10%;
+    padding: 10px 50px;
     overflow: hidden;
     position: relative;
 }
 nav{
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,11 +22,25 @@ nav{
 .LOGO{
 width: 70px;
 }
+
 nav ul li {
 display: inline-block;
 list-style: none;
 margin: 10px 25px;
 }
+nav ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #FCC539;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+
 nav ul li a{
     text-decoration:none;
     color: rgb(7, 0, 0);
@@ -42,13 +56,13 @@ border-bottom: 4px;
 font-size: 12px;
 border-radius: 7px;
 border-bottom-right-radius: 10px;
-transition: 0.5s;
 }
-.content{
-margin-top: 50px;   
-max-width: 500px;
 
+.content{
+margin-top:60px;   
+max-width: 500px;
 }
+
 .content h1{
     font-size: 50px;
     color: black;
@@ -57,7 +71,7 @@ max-width: 500px;
 .content p{
     margin-top: 10px 0 30px;
     color: #a1a1a1;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .content button p{
